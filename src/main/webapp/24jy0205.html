@@ -1,16 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>24jy0205 自己紹介</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1d4ed8, #ec4899);
+        color: #f9fafb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        background: rgba(15, 23, 42, 0.9);
+        padding: 32px 40px;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        max-width: 480px;
+        width: 90%;
+    }
+
+    .tag {
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        color: #a5b4fc;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    h1 {
+        margin: 0 0 4px;
+        font-size: 28px;
+    }
+
+    .id {
+        color: #6ee7b7;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 16px;
+    }
+
+    li {
+        margin: 8px 0;
+        padding-left: 1.2em;
+        position: relative;
+    }
+
+    li::before {
+        content: "♪";
+        position: absolute;
+        left: 0;
+        color: #facc15;
+    }
+
+    .label {
+        font-weight: bold;
+        margin-right: 4px;
+        color: #93c5fd;
+    }
+
+    button {
+        margin-top: 8px;
+        background: #f97316;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 999px;
+        color: #111827;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #fdba74;
+    }
+
+    .footer {
+        font-size: 12px;
+        color: #9ca3af;
+        text-align: right;
+        margin-top: 8px;
+    }
+</style>
 </head>
 <body>
-	<h1>24jy0205 王皓文</h1>
-	<ul>
-		<li>趣味：ゲーム</li>
-		<li>特技：柔道</li>
-		<li>長所：どこでも眠れる</li>
-	</ul>
-	<button onclick="history.back()">戻る</button>
+    <div class="card">
+        <div class="tag">SELF INTRODUCTION</div>
+        <h1>王皓文</h1>
+        <div class="id">24jy0205 / 情報システム開発科</div>
+
+        <ul>
+            <li>
+                <span class="label">趣味：</span>
+                一日中、音楽を聴きながらコードを書くこと
+            </li>
+            <li>
+                <span class="label">特技：</span>
+                初めて聴いた曲でも、すぐにメロディーを覚えられること
+            </li>
+            <li>
+                <span class="label">長所：</span>
+                好きなアーティストのためなら徹夜で頑張れる集中力
+            </li>
+        </ul>
+
+        <button onclick="history.back()">戻る</button>
+        <div class="footer">Music is my fuel.</div>
+    </div>
 </body>
-</html>   
+</html>
